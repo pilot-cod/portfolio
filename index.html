@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/formstyle.css">
+    <link rel="stylesheet" href="./CSS/projectstyle.css">
+    <script src="./JS/xuky.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to my portfolio page</h1>
+        </div>
+    </header>
+
+     <!-- Chèn banner ở đây -->
+     <div class="banner">
+        <img src="./image/banner.jpg" alt="Banner">
+    </div>
+
+    <div class="intro">
+          <img src="./image/Capture.PNG" alt="Banner">
+         <h2 class="right-align-text">
+            Xin chào! Tôi là Nghĩa, tôi rất tích lập trình.<br>
+            Tôi rất muốn được trở thành lập trình viên chuyên nghiệp. 
+        </h2>
+    </div>
+   
+    <section id="about" class="section">
+        <div class="container">
+            <h2 id="personal-info-toggle">Thông tin cá nhân</h2>
+            <form id="personal-info-form" style="display: none;">
+                <label for="full-name">Họ và tên:</label><br>
+                <input type="text" id="full-name" name="full-name" value="Đoàn Hiếu Nghĩa"><br><br>
+            
+                <label for="birthday">Ngày sinh:</label><br>
+                <input type="date" id="birthday" name="birthday" value="2000-01-28"><br><br>
+            
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" value="doanhieunghia560@gmail.com"><br><br>
+            
+                <label for="address">Địa chỉ:</label><br>
+                <input type="text" id="address" name="address" value="Tân lộ Kiều Lương, khóm châu thới 1, phường châu phú B, thành phố Châu Đốc, tỉnh An Giang"><br><br>
+            
+                <label for="phone">Số điện thoại:</label><br>
+                <input type="tel" id="phone" name="phone" value="0909832263"><br><br>
+            
+                <label for="university">Trường:</label><br>
+                <input type="text" id="university" name="university" value="Đại học Cần Thơ"><br><br>
+            
+                <label for="major">Ngành:</label><br>
+                <input type="text" id="major" name="major" value="kỹ thuật phần mềm"><br><br>
+            
+                <label for="batch">Khóa:</label><br>
+                <input type="text" id="batch" name="batch" value="44 (2018 - 2024)"><br><br>
+            
+                <button type="button" id="close-form">Close</button> <!-- Sử dụng nút button với type="button" -->
+            </form>
+            
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-row">
+                <div class="project">
+                    <h3>Niên luận cơ sở ngành</h3>
+                    <p>Chương trình vẽ đồ thị dùng thuật toán Dijkstra bằng Java, có giao diện đồ họa</p>
+                </div>
+                <div class="project">
+                    <h3>Niên luận ngành (làm việc nhóm)</h3>
+                    <p>Trang web bán điện thoại thông minh bằng PHP, HTML và CSS</p>
+                </div>
+                <div class="project">
+                    <h3>Thực tập thực tế</h3>
+                    <p>Phần mềm quản lý giảng viên bằng C#, dùng Windowform và .NET Framework</p>
+                </div>
+            </div>
+            <div class="project-row">
+                <div class="project">
+                    <h3>Tiểu luận tốt nghiệp</h3>
+                    <p>Trang web bán truyện tranh bằng PHP, HTML và CSS</p>
+                </div>
+                <div class="project">
+                    <h3>Project cá nhân 1</h3>
+                    <p>Trò chơi caro đơn giản có giao diện đồ họa bằng Python</p>
+                </div>
+                <div class="project">
+                    <h3>Project cá nhân 2</h3>
+                    <p>Trò chơi cờ vua đơn giản chạy trên terminal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+</body>
+</html>

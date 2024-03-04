@@ -1,0 +1,31 @@
+/* CSS cho cửa sổ form */
+
+#personal-info-form {
+    position: fixed; /* Đặt vị trí cố định trên màn hình */
+    top: 50%; /* Đặt vị trí theo chiều dọc */
+    left: 50%; /* Đặt vị trí theo chiều ngang */
+    transform: translate(-50%, -50%); /* Dịch chuyển form điều chỉnh vị trí chính giữa */
+    width: 400px; /* Đặt chiều rộng của form */
+    padding: 20px; /* Thêm khoảng cách đệm */
+    background-color: lavender; /* Màu nền của form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng cho form */
+    z-index: 9999; /* Đặt z-index cao hơn để hiển thị trên các phần tử khác */
+    display: none; /* Ẩn form ban đầu */
+}
+
+#personal-info-toggle:hover {
+    color: gray; /* Thay đổi màu chữ khi hover */
+    cursor: pointer; /* Chuyển con trỏ thành hình bàn tay khi hover */
+}
+
+/* CSS cho nền overlay */
+#overlay {
+    position: fixed; /* Đặt vị trí cố định trên màn hình */
+    top: 0; /* Đặt vị trí theo chiều dọc */
+    left: 0; /* Đặt vị trí theo chiều ngang */
+    width: 100%; /* Chiều rộng 100% */
+    height: 100%; /* Chiều cao 100% */
+    background-color: rgba(0, 0, 0, 0.5); /* Màu nền với độ mờ */
+    z-index: 9998; /* Đặt z-index thấp hơn so với form để nằm dưới */
+    display: none; /* Ẩn overlay ban đầu */
+}

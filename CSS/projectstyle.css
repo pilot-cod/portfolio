@@ -1,0 +1,20 @@
+.project-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: calc(33.33% - 20px); /* 33.33% để mỗi hàng chứa tối đa 3 dự án, trừ đi khoảng cách giữa các dự án */
+    margin-right: 20px; /* Khoảng cách giữa các dự án */
+    margin-bottom: 20px; /* Khoảng cách dưới cùng */
+}
+
+.project h3:hover {
+    color: gray; /* Thay đổi màu chữ khi hover */
+    cursor: pointer; /* Chuyển con trỏ thành hình bàn tay khi hover */
+}
+
+.project:last-child {
+    margin-right: 0; /* Loại bỏ margin-right của dự án cuối cùng trong mỗi hàng */
+}
+
